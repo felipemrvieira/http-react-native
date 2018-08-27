@@ -18,9 +18,9 @@ export default class Item extends Component<Props> {
             </CardItem>
             <CardItem>
                 <Body>
-                <Image source={{ uri: 'https://d31v04zdn5vmni.cloudfront.net/blog/wp-content/uploads/2012/02/best-way-to-code-background-colors-for-html-email-690x362.png' }} style={{ height: 200, width: 320, flex: 1 }} />
+                <Image source={{ uri: 'http://image.tmdb.org/t/p/w185//' + this.props.item.backdrop_path }} style={{ height: 200, width: 320, flex: 1 }} />
                 <Text>
-                    Já pensou se em um futuro próximo houvesse aula de programação para educação básica?
+                    {this.props.item.title}
                 </Text>
                 </Body>
             </CardItem>
@@ -28,7 +28,7 @@ export default class Item extends Component<Props> {
                 <Left>
                 <Button transparent textStyle={{ color: '#87838B' }}>
                     <Icon active name="thumbs-up" />
-                    <Text>1,926 Curtidas</Text>
+                    <Text>Nota: {this.props.item.vote_average}</Text>
                 </Button>
                 </Left>
             </CardItem>

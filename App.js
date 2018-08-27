@@ -11,10 +11,10 @@ import { StyleSheet, Image } from 'react-native';
 import { 
   Container, 
   Header, 
-  Content, 
+  
 } from 'native-base';
 
-import Item from './src/components/Item';
+import ListaItens from './src/components/ListaItens';
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -22,12 +22,7 @@ export default class App extends Component<Props> {
     return (
       <Container>
         <Header />
-        <Content>
-          <Item />
-          <Item />
-          <Item />
-
-        </Content>
+        <ListaItens />
       </Container>
     );
   }
