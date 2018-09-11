@@ -1,35 +1,20 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, { Component } from 'react';
-import { StyleSheet, Image } from 'react-native';
+import { } from 'react-native';
 import { 
   Container, 
-  Header, 
   
 } from 'native-base';
 
 import ListaItens from './src/components/ListaItens';
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
       <Container>
-        <Header />
+        {/* <Header /> */}
         <ListaItens />
       </Container>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    
-  },
-});

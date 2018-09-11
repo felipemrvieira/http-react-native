@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Text, } from 'react-native';
-import { Content,  } from 'native-base';
+import { } from 'react-native';
+import { Content, } from 'native-base';
 
 import axios from 'axios';
 import Item from './Item';
 
-type Props = {};
-export default class ListaItens extends Component<Props> {
+export default class ListaItens extends Component {
 
     constructor(props) {
         super(props);
@@ -21,13 +20,7 @@ export default class ListaItens extends Component<Props> {
     render() {
         return (
             <Content>
-            {/* <Item />
-            <Item />
-            <Item /> */}
-            {/* {console.log(this.state.filmes)} */}
-            {/* {this.state.filmes.map(item => (<Text key={item.title}>{ item.title }</Text>))} */}
-            {this.state.filmes.map(item => (<Item key={item.id} item={item} />))}
-
+                {this.state.filmes.map(item => (<Item key={item.id} item={item} />))}
             </Content>
         );
   }

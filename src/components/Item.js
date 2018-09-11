@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base';
 
-type Props = {};
-export default class Item extends Component<Props> {
+export default class Item extends Component {
   render() {
     return (
         <Card style={{ flex: 0 }}>
@@ -21,6 +20,9 @@ export default class Item extends Component<Props> {
                 <Image source={{ uri: 'http://image.tmdb.org/t/p/w185//' + this.props.item.backdrop_path }} style={{ height: 200, width: 320, flex: 1 }} />
                 <Text>
                     {this.props.item.title}
+                </Text>
+                <Text>
+                    {this.props.item.overview}
                 </Text>
                 </Body>
             </CardItem>
